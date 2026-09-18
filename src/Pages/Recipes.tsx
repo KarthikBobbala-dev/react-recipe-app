@@ -146,7 +146,7 @@ const Recipes = () => {
                 <div className="recipe_image_wrap">
                   <img src={item.image} alt={item.name} className="recipe_image" />
                   <button className="save_button" aria-label={`Save ${item.name}`}
-                   onClick={(e)=>handleStoreFavs(item)}>
+                   onClick={()=>handleStoreFavs(item)}>
                      {favs.some((fav: Recipe) => fav.id === item.id)
     ? "♥"
     : "♡"}
